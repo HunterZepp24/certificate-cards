@@ -1,7 +1,4 @@
-/* diagnostic styling */
-* {
-    outline: 1px dotted gray;
-}
+@import url("author.css");
 
 /* layout */
 body {
@@ -9,6 +6,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0;
+    background: black;
 }
 
 
@@ -47,13 +46,45 @@ body {
 }
 
 .front {
-    background: coral;
+    background: #0E3B3D;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .back {
-    background: cornflowerblue;
+    background: #0E3B3D;
     /* flip it default   */
     transform: rotateY(180deg);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    font-family: 'Author-Bold';
+    font-size: 2.5em;
+    color: #EDD064;
+    text-align: center;
+    padding: 0 0.5em 0.5em 0.5em;
+}
+
+p{
+    font-family: 'Author-Regular';
+    font-size: 1.25em;
+    color: #EDD064;
+    padding: 1em;
+}
+
+span{
+    font-family: 'Author-Medium';
+    font-size: 1.125em;
+    color: #EDD064;
+    text-align: center;
 }
 
 /* flip card
@@ -64,17 +95,17 @@ body {
 }
 
 /* Media Query for Mobile */
-@media only screen and (max-width: 30em){ 
-    
+@media only screen and (max-width: 30em) {
+
     /* Diagnostic Styling. Delete When Done. */
     body:before {
-         background: yellow;
-         content: "Mobile Size";
+        background: yellow;
+        content: "Mobile Size";
     }
 
     body {
         display: flex;
         flex-direction: column;
     }
-    
+
 }
