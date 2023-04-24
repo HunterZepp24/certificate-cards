@@ -1,27 +1,29 @@
 /* Print Stylesheet */
 
 @media print {
-    
+
     body {
-        /* serif font for easier reading */
-        font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
-        /* increase font size */
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 1.25em;
-}
+    }
+
+    svg {
+        display: none;
+    }
 
     /* printer anchor links */
     a[href]::after {
         content: " " attr(href); 
     }
 
-    /* turn paragraphs into colums */
+    /* limits the width of paragraphs on the page. */
     .face p {
-        columns: 2;
+        width: 5in;
     }
 
     @page {
         /* reset page margins */
-        margin: .25in;
+        margin: .5in;
     }
 
 }

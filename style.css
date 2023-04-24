@@ -18,7 +18,7 @@ body {
     margin: 16px;
 
     /* set perspective   */
-    perspective: 600px;
+    perspective: 400px;
 }
 
 /* card */
@@ -28,7 +28,7 @@ body {
     position: relative;
 
     cursor: pointer;
-    transition: transform 1s;
+    transition: transform 0.75s ease-in-out;
 
     /* preserve child 3d   */
     transform-style: preserve-3d;
@@ -86,23 +86,7 @@ span{
     text-align: center;
 }
 
-#web{
-    width: 200px;
-}
-
-#ux{
-    width: 200px;
-}
-
-#motion{
-    width: 200px;
-}
-
-#3d{
-    width: 200px;
-}
-
-#game{
+svg{
     width: 200px;
 }
 
