@@ -86,6 +86,26 @@ span{
     text-align: center;
 }
 
+#web{
+    width: 200px;
+}
+
+#ux{
+    width: 200px;
+}
+
+#motion{
+    width: 200px;
+}
+
+#3d{
+    width: 200px;
+}
+
+#game{
+    width: 200px;
+}
+
 /* flip card
   * toggle with JS
   */
